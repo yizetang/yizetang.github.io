@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/user/yizet/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/user/yizet/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/user/yizet/images/favicon.ico">
+  <link rel="mask-icon" href="/user/yizet/images/favicon.ico" color="#222">
+  <meta name="google-site-verification" content="D2uUzl7-E2MeK5WQbTVGYWMLxz73q4A52_V1A0T__F0">
+
+<link rel="stylesheet" href="/user/yizet/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.andrew.cmu.edu","root":"/user/yizet/","images":"/user/yizet/images","scheme":"Mist","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"right","display":"remove","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/user/yizet/js/config.js"></script>
+<meta name="description" content="Hi! My name is Tom Tang. I am a Master’s student in Computer Science at Carnegie Mellon University.  Project GallerySBP: Reconfigurable Deep Learning Accelerator in TSMC N28SBP means Systolic Blood Pr">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tom Tang">
+<meta property="og:url" content="https://www.andrew.cmu.edu/user/yizet/">
+<meta property="og:site_name" content="Tom Tang">
+<meta property="og:description" content="Hi! My name is Tom Tang. I am a Master’s student in Computer Science at Carnegie Mellon University.  Project GallerySBP: Reconfigurable Deep Learning Accelerator in TSMC N28SBP means Systolic Blood Pr">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/3.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/4.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/5.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/6.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/7.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/8.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/9.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/magnolia/1.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/rg526/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/rg526/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/rg526/3.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/rg526/4.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/rg526/5.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/candela/1.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/candela/2.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/candela/3.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/vsc/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/vsc/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/vsc/3.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/bwnace/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/404founder/1.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/ran/1.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/ran/2.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/3.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/4.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/5.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/sram/6.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/motor/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/motor/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/motor/3.png">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/cmu-bs/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/nvidia-2024/1.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/nvidia-2024/2.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/nvidia-2024/3.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/nvidia-2024/4.jpg">
+<meta property="og:image" content="https://www.andrew.cmu.edu/user/yizet/images/nvidia-2024/5.jpg">
+<meta property="article:published_time" content="2024-10-11T03:26:52.754Z">
+<meta property="article:modified_time" content="2024-10-11T03:26:52.754Z">
+<meta property="article:author" content="Tom Tang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.andrew.cmu.edu/user/yizet/images/sbp/1.jpg">
+
+
+<link rel="canonical" href="https://www.andrew.cmu.edu/user/yizet/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://www.andrew.cmu.edu/user/yizet/","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Tom Tang
+</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFD6CE13RC"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-XFD6CE13RC","only_pageview":false}</script>
+  <script src="/user/yizet/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/user/yizet/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/user/yizet/" class="brand" rel="start">
+      <p class="site-title">Tom Tang</p>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-about"><a href="/user/yizet/" rel="section"><i class="fa fa-home fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-github"><a href="https://github.com/hyabc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>Github</a></li>
+        <li class="menu-item menu-item-blog"><a href="https://hyabc.github.io/" rel="noopener" target="_blank"><i class="fa fa-user fa-fw"></i>Blog</a></li>
+        <li class="menu-item menu-item-linkedin"><a href="https://www.linkedin.com/in/yizetang" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>Hi! My name is Tom Tang. I am a Master’s student in <a target="_blank" rel="noopener" href="https://csd.cmu.edu/">Computer Science</a> at <a target="_blank" rel="noopener" href="https://cmu.edu/">Carnegie Mellon University</a>.</p>
+<hr>
+<h1 id="Project-Gallery"><a href="#Project-Gallery" class="headerlink" title="Project Gallery"></a>Project Gallery</h1><h3 id="SBP-Reconfigurable-Deep-Learning-Accelerator-in-TSMC-N28"><a href="#SBP-Reconfigurable-Deep-Learning-Accelerator-in-TSMC-N28" class="headerlink" title="SBP: Reconfigurable Deep Learning Accelerator in TSMC N28"></a>SBP: Reconfigurable Deep Learning Accelerator in TSMC N28</h3><p>SBP means <em>Systolic Blood Pressure</em><br>(18725 project, May 2024)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/sbp/1.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/2.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/3.jpg" style="height: 200px;"/></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="images/sbp/4.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/5.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/6.png" style="height: 200px;"/></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="images/sbp/7.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/8.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/sbp/9.jpg" style="height: 200px;"/></div></div></div>
+
+
+<h3 id="Magnolia-Place-Optimizing-C-Compiler"><a href="#Magnolia-Place-Optimizing-C-Compiler" class="headerlink" title="Magnolia Place: Optimizing C Compiler"></a>Magnolia Place: Optimizing C Compiler</h3><p>C compiler written in OCaml<br>(15411 project, May 2023)</p>
+<img src="images/magnolia/1.png" style="height: 250px;">
+
+
+<h3 id="CloudFS-Cloud-backed-Local-Filesystem"><a href="#CloudFS-Cloud-backed-Local-Filesystem" class="headerlink" title="CloudFS: Cloud-backed Local Filesystem"></a>CloudFS: Cloud-backed Local Filesystem</h3><p>FUSE-based filesystem in C++ that offloads large files to Amazon S3-compatible cloud storage<br>(18746 project, Dec 2023)</p>
+<h3 id="myFTL-SSD-Flash-Translation-Layer"><a href="#myFTL-SSD-Flash-Translation-Layer" class="headerlink" title="myFTL: SSD Flash Translation Layer"></a>myFTL: SSD Flash Translation Layer</h3><p>Custom Flash Translation Layer algorithm on top of SSD simulator<br>(18746 project, Oct 2023)</p>
+<h3 id="Tensor-Native-Processor-Parallel-Machine-Learning-Accelerator"><a href="#Tensor-Native-Processor-Parallel-Machine-Learning-Accelerator" class="headerlink" title="Tensor Native Processor: Parallel Machine Learning Accelerator"></a><a target="_blank" rel="noopener" href="https://tensor-native-processor.github.io/">Tensor Native Processor</a>: Parallel Machine Learning Accelerator</h3><p>A new accelerator architecture design, optimized primarily for tensor operation performance<br>(15418 project, Dec 2022)</p>
+<h3 id="Vision-Augmented-Wearable-Visual-Assist-System"><a href="#Vision-Augmented-Wearable-Visual-Assist-System" class="headerlink" title="Vision Augmented: Wearable Visual Assist System"></a><a target="_blank" rel="noopener" href="https://github.com/hyabc/assist">Vision Augmented</a>: Wearable Visual Assist System</h3><p>Wearable system to assist visually impaired people<br>Webcam on a hat, 3 ultrasonic sensor (SR-04) and one LiDAR sensor (TFMini) (attached to a servo motor) on a plastic belt (along with Arduinos), mobile phone (for GPS signal) and a backpack containing NVIDIA Jetson TX2 (for central control/processing)<br>Sockets for inter-module communication<br>Audio messages as output (using TTS API), supporting:</p>
+<ul>
+<li>Traffic light detection (using <a target="_blank" rel="noopener" href="https://pjreddie.com/darknet/yolo/">YOLO</a> to find traffic lights and OpenCV API to extract color (red/green))</li>
+<li>Obstacle warning (ultrasonic distance)</li>
+<li>Staircase warning (increasing/decreasing height from LiDAR)</li>
+<li>Nearby building/road notification (GPS position)</li>
+</ul>
+<p>(Aug 2018)</p>
+<h3 id="RG526-3D-Haptic-Rhythm-Game"><a href="#RG526-3D-Haptic-Rhythm-Game" class="headerlink" title="RG526: 3D Haptic Rhythm Game"></a><a target="_blank" rel="noopener" href="https://github.com/rg526/rg526">RG526</a>: 3D Haptic Rhythm Game</h3><p>3D music game written in C and OpenGL ES 3.0 API<br>Runs on Raspberry Pi 4 and its Broadcom GPU<br>Programmable <em>note</em> files to define the “blocks” in the game<br>(Build18 2022)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/rg526/1.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/rg526/2.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/rg526/3.jpg" style="height: 200px;"/></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="images/rg526/4.jpg" style="height: 200px;"/></div><div class="group-picture-column"><img src="images/rg526/5.jpg" style="height: 200px;"/></div></div></div>
+
+<h3 id="Candela-Course-Information-and-Discussion-Website"><a href="#Candela-Course-Information-and-Discussion-Website" class="headerlink" title="Candela: Course Information and Discussion Website"></a><a target="_blank" rel="noopener" href="https://github.com/rg526/candela">Candela</a>: Course Information and Discussion Website</h3><p>An information/discussion board for all courses at CMU, written in Golang<br>(HackCMU 2022)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/candela/1.png" style="height: 250px;"></div><div class="group-picture-column"><img src="images/candela/2.png" style="height: 250px;"></div><div class="group-picture-column"><img src="images/candela/3.png" style="height: 250px;"></div></div></div>
+
+<h3 id="Very-Slow-Computer"><a href="#Very-Slow-Computer" class="headerlink" title="Very Slow Computer"></a>Very Slow Computer</h3><p>A “register machine” built with NAND gates<br>(Build18 2023)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/vsc/1.jpg" style="height: 250px;"></div><div class="group-picture-column"><img src="images/vsc/2.jpg" style="height: 250px;"></div><div class="group-picture-column"><img src="images/vsc/3.jpg" style="height: 250px;"></div></div></div>
+
+
+<h3 id="BWNACE"><a href="#BWNACE" class="headerlink" title="BWNACE"></a>BWNACE</h3><p>Custom camera with photodiodes<br>The original plan is to build a custom camera with CMOS sensor, but we can’t get the sensor to work<br>(Build18 2024)</p>
+<img src="images/bwnace/1.jpg" style="height: 250px;">
+
+
+<h3 id="404-Founder-Anti-Dozer"><a href="#404-Founder-Anti-Dozer" class="headerlink" title="404 Founder: Anti Dozer"></a>404 Founder: Anti Dozer</h3><p>Random app that scares you when you are sleepy<br>When students start doing homework the day before deadline, that (almost) never ends up well.<br>(Tartanhacks 2024)</p>
+<img src="images/404founder/1.png" style="height: 250px;">
+
+<h3 id="Robotic-Arm-Object-Pickup"><a href="#Robotic-Arm-Object-Pickup" class="headerlink" title="Robotic Arm Object Pickup"></a>Robotic Arm Object Pickup</h3><p>Robotic arm (dobot) automatic object detection (using OpenCV) and pickup<br>Control Dobot with <a target="_blank" rel="noopener" href="https://en.dobot.cn/service/download-center">Dobot serial protocol</a><br>(Jul 2021)</p>
+<h3 id="Project-Radiation-CLI-News-Reader"><a href="#Project-Radiation-CLI-News-Reader" class="headerlink" title="Project Radiation: CLI News Reader"></a>Project <a target="_blank" rel="noopener" href="https://github.com/hyabc/radiation">Radiation</a>: CLI News Reader</h3><p><a target="_blank" rel="noopener" href="https://miniflux.app/">Miniflux</a> command-line client in Go<br>(Jun 2021)</p>
+<h3 id="Project-Railway-Yet-Another-Linux-Music-Player"><a href="#Project-Railway-Yet-Another-Linux-Music-Player" class="headerlink" title="Project Railway: Yet Another Linux Music Player"></a>Project <a target="_blank" rel="noopener" href="https://github.com/hyabc/railway">Railway</a>: Yet Another Linux Music Player</h3><p>Gtk+3 MP3 music player in C<br>Simplistic user interface (album grid, song list in side panel, play controls in bottom)<br>mpg123 as acutal playing backend<br>Gstreamer to get music file information<br>(May 2021)</p>
+<h3 id="Project-Ran-A-Javascript-STG-Game"><a href="#Project-Ran-A-Javascript-STG-Game" class="headerlink" title="Project Ran: A Javascript STG Game"></a>Project <a target="_blank" rel="noopener" href="https://github.com/hyabc/ran">Ran</a>: A Javascript STG Game</h3><p>STG game in Javascript and HTML5 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Canvas</a><br>Inspired by <a target="_blank" rel="noopener" href="https://www16.big.or.jp/~zun/">Touhou Project</a><br>Run game directly inside browser<br>(May 2021)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/ran/1.png" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/ran/2.png" style="height: 250px;"/></div></div></div>
+
+
+<h3 id="HTIC-Highschool-Tutor-Internet-Category"><a href="#HTIC-Highschool-Tutor-Internet-Category" class="headerlink" title="HTIC: Highschool Tutor Internet Category"></a><a target="_blank" rel="noopener" href="https://github.com/hyabc/htic">HTIC</a>: Highschool Tutor Internet Category</h3><p>Tutor advertising platform in PHP and MySQL<br>Supports tutor listing/filtering, and a tutor account system to edit their profile<br>(May 2020)</p>
+<h3 id="Bipartite-Matching-Optimal-Dormitory-Assignment"><a href="#Bipartite-Matching-Optimal-Dormitory-Assignment" class="headerlink" title="Bipartite Matching: Optimal Dormitory Assignment"></a>Bipartite Matching: Optimal Dormitory Assignment</h3><p>Match students with similar hobbies into dorm rooms with PHP, using maximum flow algorithm to achive the best match<br>Similar to CMU’s dorm matching system<br>(Aug 2019)</p>
+<hr>
+<h1 id="Misc-Course-Projects"><a href="#Misc-Course-Projects" class="headerlink" title="Misc. Course Projects"></a>Misc. Course Projects</h1><h3 id="15445-BusTub-RDBMS"><a href="#15445-BusTub-RDBMS" class="headerlink" title="15445: BusTub RDBMS"></a><a target="_blank" rel="noopener" href="https://15445.courses.cs.cmu.edu/spring2024">15445</a>: BusTub RDBMS</h3><p>You have this fancy linked-list/hash table?</p>
+<h3 id="18370-LQR-Controller-for-Autonomous-Driving"><a href="#18370-LQR-Controller-for-Autonomous-Driving" class="headerlink" title="18370: LQR Controller for Autonomous Driving"></a>18370: LQR Controller for Autonomous Driving</h3><p>Simulink is very cool</p>
+<h3 id="18422-SRAM-Circuit-Design-in-45nm-GPDK"><a href="#18422-SRAM-Circuit-Design-in-45nm-GPDK" class="headerlink" title="18422: SRAM Circuit Design in 45nm GPDK"></a>18422: SRAM Circuit Design in 45nm GPDK</h3><p>Guess who’s using <a target="_blank" rel="noopener" href="https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/silicon-signoff/assura-physical-verification.html">Assura</a>?</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/sram/1.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/sram/2.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/sram/3.jpg" style="height: 250px;"/></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="images/sram/4.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/sram/5.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/sram/6.jpg" style="height: 250px;"/></div></div></div>
+
+
+
+<h3 id="18341-Network-on-a-Chip"><a href="#18341-Network-on-a-Chip" class="headerlink" title="18341: Network on a Chip"></a>18341: Network on a Chip</h3><p>Would not recommend - do not build an interconnect like this</p>
+<h3 id="18349-Motor-Controller-using-RTOS"><a href="#18349-Motor-Controller-using-RTOS" class="headerlink" title="18349: Motor Controller using RTOS"></a>18349: Motor Controller using RTOS</h3><div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/motor/1.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/motor/2.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/motor/3.png" style="height: 250px;"/></div></div></div>
+
+
+<hr>
+<h1 id="School-Life"><a href="#School-Life" class="headerlink" title="School Life"></a>School Life</h1><h3 id="M-S-in-Computer-Science-Carnegie-Mellon-University"><a href="#M-S-in-Computer-Science-Carnegie-Mellon-University" class="headerlink" title="M.S. in Computer Science, Carnegie Mellon University"></a>M.S. in <a target="_blank" rel="noopener" href="https://csd.cmu.edu/">Computer Science</a>, Carnegie Mellon University</h3><p>(Sep 2024 - May 2025)</p>
+<h3 id="B-S-in-Electrical-and-Computer-Engineering-Carnegie-Mellon-University"><a href="#B-S-in-Electrical-and-Computer-Engineering-Carnegie-Mellon-University" class="headerlink" title="B.S. in Electrical and Computer Engineering, Carnegie Mellon University"></a>B.S. in <a target="_blank" rel="noopener" href="https://www.ece.cmu.edu/">Electrical and Computer Engineering</a>, Carnegie Mellon University</h3><p>(Sep 2020 - May 2024)</p>
+<img src="images/cmu-bs/1.jpg" style="height: 250px;">
+
+<p><a href="course-reviews">CMU Course Reviews</a></p>
+<hr>
+<h1 id="Work-Experience"><a href="#Work-Experience" class="headerlink" title="Work Experience"></a>Work Experience</h1><h3 id="Software-Engineer-Intern-–-NVIDIA-Graphics-Profiler"><a href="#Software-Engineer-Intern-–-NVIDIA-Graphics-Profiler" class="headerlink" title="Software Engineer Intern – NVIDIA, Graphics Profiler"></a>Software Engineer Intern – NVIDIA, Graphics Profiler</h3><p>(Summer 2024)</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="images/nvidia-2024/1.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/nvidia-2024/2.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/nvidia-2024/3.jpg" style="height: 250px;"/></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="images/nvidia-2024/4.jpg" style="height: 250px;"/></div><div class="group-picture-column"><img src="images/nvidia-2024/5.jpg" style="height: 250px;"/></div></div></div>
+
+
+<h3 id="Software-Engineer-Intern-–-NVIDIA-Display-Driver"><a href="#Software-Engineer-Intern-–-NVIDIA-Display-Driver" class="headerlink" title="Software Engineer Intern – NVIDIA, Display Driver"></a>Software Engineer Intern – NVIDIA, Display Driver</h3><p>(Summer 2022)</p>
+<h3 id="Teaching-Assistant-for-18220"><a href="#Teaching-Assistant-for-18220" class="headerlink" title="Teaching Assistant for 18220"></a>Teaching Assistant for <a target="_blank" rel="noopener" href="https://courses.ece.cmu.edu/18220">18220</a></h3><p>Electronic Devices and Analog Circuits<br>(Spring 2022 - Fall 2023)</p>
+<h3 id="Teaching-Assistant-for-18622"><a href="#Teaching-Assistant-for-18622" class="headerlink" title="Teaching Assistant for 18622"></a>Teaching Assistant for <a target="_blank" rel="noopener" href="https://courses.ece.cmu.edu/18622">18622</a></h3><p>Digital Integrated Circuit Design<br>(Fall 2024)</p>
+<hr>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer" style="display: none;">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class=""></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tom Tang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/user/yizet/js/comments.js"></script><script src="/user/yizet/js/utils.js"></script><script src="/user/yizet/js/schemes/muse.js"></script><script src="/user/yizet/js/next-boot.js"></script>
+
+  
+
+
+
+  <script src="/user/yizet/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+
+</body>
+</html>
