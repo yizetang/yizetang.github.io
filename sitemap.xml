@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.andrew.cmu.edu/user/yizet/course-reviews/</loc>
+    <loc>https://yizetang.github.io/course-reviews/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://www.andrew.cmu.edu/user/yizet/</loc>
+    <loc>https://yizetang.github.io/</loc>
     
     <lastmod>2024-10-11</lastmod>
     
@@ -21,8 +21,8 @@
   
 
   <url>
-    <loc>https://www.andrew.cmu.edu/user/yizet</loc>
-    <lastmod>2024-10-28</lastmod>
+    <loc>https://yizetang.github.io/</loc>
+    <lastmod>2025-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
